@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .font_poppins_regular {
+  font-family: var(--poppins-font);
+  font-weight: 400;
+}
+.font_poppins_medium {
+  font-family: var(--poppins-font);
+  font-weight: 500;
+}
+.font_poppins_bold {
+  font-family: var(--poppins-font);
+  font-weight: 700;
+}
+.font_avenir {
+  font-family: var(--font-avenir);
+} */
