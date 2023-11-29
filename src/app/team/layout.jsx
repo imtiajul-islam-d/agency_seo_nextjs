@@ -9,6 +9,7 @@ export async function generateMetadata() {
     openGraph: {
       images: JSON[0]["image"],
     },
+    metadataBase: process.env.BASE_URL,
   };
 }
 const Layout = ({ children }) => {

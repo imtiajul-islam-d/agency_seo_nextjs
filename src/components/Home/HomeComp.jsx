@@ -1,5 +1,5 @@
 import NewsLetter from "../Shared/NewsLetter";
-import FeaturedProduct from "./FeaturedProduct";
+import FeaturedProject from "./FeaturedProject";
 import Hero from "./Hero";
 import WorkList from "./WorkList";
 
@@ -8,7 +8,7 @@ const HomeComp = () => {
     <div>
       <Hero />
       <WorkList />
-      <FeaturedProduct />
+      <FeaturedProject />
       <NewsLetter />
     </div>
   );

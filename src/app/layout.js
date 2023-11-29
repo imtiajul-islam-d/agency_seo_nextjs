@@ -4,6 +4,7 @@ import "../assets/styles/globals.css";
 import SiteNav from "@/components/Shared/SiteNav";
 import SiteFooter from "@/components/Shared/SiteFooter";
 // SEO property
+// metadatabase TODO:
 export async function generateMetadata() {
   const res = await fetch(process.env.BASE_URL + "api/SiteMeta/home");
   const JSON = await res.json();
@@ -14,6 +15,7 @@ export async function generateMetadata() {
     openGraph: {
       images: JSON[0]["image"],
     },
+    metadataBase: process.env.BASE_URL,
   };
 }
 // google font

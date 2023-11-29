@@ -2,7 +2,7 @@ import Image from "next/image";
 async function getData() {
   const res = await fetch(process.env.BASE_URL + "api/BrandList");
   if (!res.ok) {
-    throw new Error("Brand Image calling failed");
+    throw new Error("something went wrong");
   }
   return res.json();
 }

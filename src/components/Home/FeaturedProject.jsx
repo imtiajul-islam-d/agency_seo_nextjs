@@ -1,18 +1,18 @@
 async function getData() {
-  const res = await fetch(process.env.BASE_URL + "api/SocialLink");
+  const res = await fetch(process.env.BASE_URL + "api/FeaturedProject");
   if (!res.ok) {
     throw new Error("something went wrong");
   }
   return res.json();
 }
 
-const SiteFooter = async () => {
+const FeaturedProject = async () => {
   const data = await getData();
   return (
     <div>
-      <div>Footer</div>
+      <div>This is featured product</div>
     </div>
   );
 };
 
-export default SiteFooter;
+export default FeaturedProject;
