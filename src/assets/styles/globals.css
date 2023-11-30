@@ -54,6 +54,30 @@
   @apply text-[1rem];
 }
 
+/* brands swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* brands swiper */
 /* Define a custom animation called animate-bounce-custom */
 .animate-bounce-custom {
   animation: bounce 2s ease-in-out;
