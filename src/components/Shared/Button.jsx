@@ -8,7 +8,7 @@ const Button = ({
 }) => {
   return (
     <button
-      className={`transition inline-block ${
+      className={`transition font-font_poppins inline-block ${
         padding ? padding : "px-4 py-[0.625em]"
       }  font-medium rounded-md ${color} ${textColor} ${h_textColor} ${h_color} text-base border border-primary-500`}
     >

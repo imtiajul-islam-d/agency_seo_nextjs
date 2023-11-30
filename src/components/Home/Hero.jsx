@@ -36,7 +36,9 @@ const Hero = async () => {
           <div className="flex items-center w-full slideInLeft md:w-1/2 md:mr-5">
             <div className="max-w-[550px] mb-8 md:mb-0">
               <h1 className="h1 ">{data?.title}</h1>
-              <h3 className="mt-4 pb-7 pb:mb-0 h3">{data?.description}</h3>
+              <h3 className="mt-4 pb-7 pb:mb-0 h3 font-font_avenir">
+                {data?.description}
+              </h3>
               <Button
                 textColor="text-neutral-50"
                 title="Get Started"
