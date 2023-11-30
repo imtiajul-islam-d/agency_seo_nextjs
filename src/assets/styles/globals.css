@@ -17,3 +17,156 @@
 .font_avenir {
   font-family: var(--font-avenir);
 } */
+.h1 {
+  @apply text-[2.25rem] leading-[65px] tablet:text-[3rem] font-font_poppins font-bold desktop:text-[3.125rem];
+}
+/* .h1 {
+  @apply text-[2.25rem] leading-[1] -tracking-wide tablet:text-[3rem] desktop:text-[3.75] laptop:text-[4.5rem] large_screen:text-[5.25rem];
+} */
+.h2 {
+  @apply text-[1.875rem] -tracking-wide tablet:text-[2.25rem];
+}
+.h3 {
+  @apply text-[1.25rem] leading-[27.32px] font-medium font-font_avenir;
+}
+.p {
+  @apply -tracking-wide text-[1rem];
+}
+
+.small {
+  @apply -tracking-wide text-[0.875rem];
+}
+
+.max_w {
+  @apply max-w-screen-2xl;
+}
+.padding {
+  @apply px-3 md:px-20;
+}
+/*  */
+.rounded_custom {
+  @apply rounded-sm;
+}
+.shadow_custom {
+  @apply shadow;
+}
+.custom_base {
+  @apply text-[1rem];
+}
+
+/* Define a custom animation called animate-bounce-custom */
+.animate-bounce-custom {
+  animation: bounce 2s ease-in-out;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/*  */
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/*  */
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* // */
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}

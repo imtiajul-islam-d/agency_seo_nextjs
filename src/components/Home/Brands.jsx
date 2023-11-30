@@ -9,8 +9,8 @@ async function getData() {
 const Brands = async () => {
   const data = await getData();
   return (
-    <div>
-      <div>
+    <div className="w-full py-8 pb-20 bg-primary-50">
+      <div className="flex items-center justify-around py-4 h-1/2 bg-neutral-50">
         {data?.map((item) => (
           <Image
             key={item?.id}
@@ -19,6 +19,7 @@ const Brands = async () => {
             width={1000}
             height={750}
             priority
+            className="w-36"
           />
         ))}
       </div>
