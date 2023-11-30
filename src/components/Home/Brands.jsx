@@ -10,9 +10,9 @@ async function getData() {
 const Brands = async () => {
   const data = await getData();
   return (
-    <div className="w-full py-8 pb-20 bg-primary-50 min-h-[20svh]">
-      <div className="bg-neutral-50 md:h-28">
-        <div className="flex items-center h-full mx-auto padding max_w">
+    <div className="w-full py-8 pb-20 bg-primary-50 ">
+      <div className="bg-neutral-50 h-28">
+        <div className="flex items-center justify-around h-full mx-auto padding max_w">
           <Brands_item data={data} />
         </div>
       </div>

@@ -36,12 +36,12 @@ const Hero = async () => {
       <section className="flex flex-col justify-between">
         <div className="justify-between w-full pt-24 mx-auto padding md:flex max_w ">
           <div className="flex items-center w-full md:w-1/2 ">
-            <div className="md:max-w-[550px]">
-              {/* <h1 className="h1">{data?.title}</h1> */}
-              <h1 className="h1">
+            <div className="max-w-[550px] mb-8 md:mb-0">
+              <h1 className="h1 ">{data?.title}</h1>
+              {/* <h1 className="h1">
                 Increase Your Customer Loyality and Satisfaction
-              </h1>
-              <h3 className="mb-9 h3">{data?.description}</h3>
+              </h1> */}
+              <h3 className="mt-4 mb-7 md:mb-0 h3">{data?.description}</h3>
               <Button
                 textColor="text-neutral-50"
                 title="Get Started"
