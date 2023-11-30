@@ -18,7 +18,7 @@
   font-family: var(--font-avenir);
 } */
 .h1 {
-  @apply text-[2.25rem] leading-[40px] md:leading-[65px] tablet:text-[3rem] font-font_poppins font-bold desktop:text-[3.125rem];
+  @apply text-[2.25rem] leading-[40px] md:leading-[58px] tablet:text-[3rem] font-font_poppins font-bold desktop:text-[3.125rem] text-neutral-900;
 }
 /* .h1 {
   @apply text-[2.25rem] leading-[1] -tracking-wide tablet:text-[3rem] desktop:text-[3.75] laptop:text-[4.5rem] large_screen:text-[5.25rem];

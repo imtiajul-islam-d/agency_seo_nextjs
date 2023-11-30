@@ -54,7 +54,7 @@ const SiteNav = () => {
           </div>
 
           <div className="md:flex md:items-center md:gap-4">
-            <nav aria-label="Global" className="hidden md:block">
+            <nav aria-label="Global" className="hidden lg:block">
               <ul className="flex items-center text-sm gap-7 sm:pl-4">
                 {nav?.map((item) => (
                   <li key={item?.id}>
@@ -93,7 +93,7 @@ const SiteNav = () => {
                 </div>
               </div>
 
-              <div className="block md:hidden">
+              <div className="block lg:hidden">
                 <button className="p-2 text-gray-600 transition bg-gray-100 rounded hover:text-gray-600/75">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

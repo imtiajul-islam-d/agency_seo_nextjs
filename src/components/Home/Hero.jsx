@@ -23,25 +23,20 @@ const Hero = async () => {
     {
       id: 2,
       image: data?.image3,
-      star: 2,
     },
     {
-      id: 2,
+      id: 3,
       image: data?.image4,
-      star: 2,
     },
   ];
   return (
     <section className=" bg-primary-50">
       <section className="flex flex-col justify-between">
         <div className="justify-between w-full pt-24 mx-auto padding md:flex max_w ">
-          <div className="flex items-center w-full md:w-1/2 ">
+          <div className="flex items-center w-full md:w-1/2 md:mr-5">
             <div className="max-w-[550px] mb-8 md:mb-0">
               <h1 className="h1 ">{data?.title}</h1>
-              {/* <h1 className="h1">
-                Increase Your Customer Loyality and Satisfaction
-              </h1> */}
-              <h3 className="mt-4 mb-7 md:mb-0 h3">{data?.description}</h3>
+              <h3 className="mt-4 pb-7 pb:mb-0 h3">{data?.description}</h3>
               <Button
                 textColor="text-neutral-50"
                 title="Get Started"
