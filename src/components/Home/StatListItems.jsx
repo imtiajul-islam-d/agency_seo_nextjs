@@ -13,7 +13,7 @@ const StatListItems = async () => {
   const data = await getData();
   return (
     <div className="mt-8">
-      <div className="grid grid-cols-1 gap-2 mt-14 md:grid-cols-2 lg:grid-cols-4 md:gap-5">
+      <div className="grid grid-cols-1 gap-2 md:mt-14 md:grid-cols-2 lg:grid-cols-4 md:gap-5">
         <div className="flex items-center justify-center py-20 transition shadow-md hover:shadow-sm">
           <div className="flex flex-col items-center justify-center px-5 ">
             <span className="text-[2.063rem] p-[1.375rem] bg-primary-50 transition group-hover:bg-neutral-50 inline-block rounded-xl">

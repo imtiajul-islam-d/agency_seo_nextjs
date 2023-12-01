@@ -18,10 +18,10 @@
   @apply font-medium uppercase h3 text-primary-500 font-font_poppins;
 }
 .pg_t2 {
-  @apply font-font_poppins leading-[35px] md:leading-[45px] h2;
+  @apply font-font_poppins leading-[40px] md:leading-[45px] h2;
 }
 .small {
-  @apply -tracking-wide text-[0.875rem];
+  @apply leading-[26px] text-[0.875rem];
 }
 
 .max_w {
@@ -173,4 +173,16 @@
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+}
+
+/*  */
+.c_grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c_grid-item {
+  flex: 1 1 calc(50% - 5px); /* Adjust based on your grid column count and gap */
+  margin-bottom: 5px; /* Adjust margin or gap between items */
+  display: flex;
 }
