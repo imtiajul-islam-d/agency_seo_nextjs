@@ -35,7 +35,7 @@ const SiteNav = () => {
     },
   ];
   return (
-    <header className="absolute top-0 left-0 flex items-center w-full h-24 font-font_poppins">
+    <header className="absolute top-0 left-0 flex items-center w-full h-24 my-2 font-font_poppins">
       <div className="w-full mx-auto padding max_w ">
         <div className="flex items-center justify-between h-16">
           <div className="flex-1 md:flex md:items-center md:gap-12">

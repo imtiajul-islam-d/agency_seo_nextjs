@@ -32,7 +32,7 @@ const Hero = async () => {
   return (
     <section className=" bg-primary-50">
       <section className="flex flex-col justify-between">
-        <div className="justify-between w-full pt-24 mx-auto padding md:flex max_w ">
+        <div className="justify-between w-full mx-auto pt-28 padding md:flex max_w ">
           <div className="flex items-center w-full slideInLeft md:w-1/2 md:mr-5">
             <div className="max-w-[550px] mb-8 md:mb-0">
               <h1 className="h1 ">{data?.title}</h1>
