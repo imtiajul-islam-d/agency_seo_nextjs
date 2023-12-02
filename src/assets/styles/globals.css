@@ -2,43 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-.h1 {
-  @apply text-[2.25rem] leading-[2.5rem] md:leading-[3.625rem] tablet:text-[3rem] font-font_poppins font-bold desktop:text-[3.125rem] text-neutral-900;
-}
-.h2 {
-  @apply text-[1.875rem] font-semibold;
-}
-.h3 {
-  @apply text-[1.25rem] leading-[1.708rem] font-medium;
-}
-.p {
-  @apply -tracking-wide text-[1rem];
-}
-.pg_title {
-  @apply font-medium uppercase h3 text-primary-500 font-font_poppins;
-}
-.pg_t2 {
-  @apply font-font_poppins leading-[2.5rem] md:leading-[2.813rem] h2;
-}
-.small {
-  @apply leading-[1.625rem] text-[0.875rem];
-}
+@layer components {
+  .h1 {
+    @apply text-[2.25rem] leading-[2.5rem] md:leading-[3.625rem] tablet:text-[3rem] font-font_poppins font-bold desktop:text-[3.125rem] text-neutral-900;
+  }
+  .h2 {
+    @apply text-[1.875rem] font-semibold;
+  }
+  .h3 {
+    @apply text-[1.25rem] leading-[1.708rem] font-medium;
+  }
+  .p {
+    @apply -tracking-wide text-[1rem];
+  }
+  .pg_title {
+    @apply font-medium uppercase h3 text-primary-500 font-font_poppins;
+  }
+  .pg_t2 {
+    @apply font-font_poppins leading-[2.5rem] md:leading-[2.813rem] h2;
+  }
+  .small {
+    @apply leading-[1.625rem] text-[0.875rem];
+  }
 
-.max_w {
-  @apply max-w-screen-2xl;
-}
-.padding {
-  @apply px-3 md:px-20;
-}
-/*  */
-.rounded_custom {
-  @apply rounded-sm;
-}
-.shadow_custom {
-  @apply shadow;
-}
-.custom_base {
-  @apply text-[1rem];
+  .max_w {
+    @apply max-w-screen-2xl;
+  }
+  .padding {
+    @apply px-3 md:px-20;
+  }
+  /*  */
+  .rounded_custom {
+    @apply rounded-sm;
+  }
+  .shadow_custom {
+    @apply shadow;
+  }
+  .custom_base {
+    @apply text-[1rem];
+  }
 }
 
 /* brands swiper */
