@@ -16,7 +16,7 @@ const SiteFooter = async () => {
 
   return (
     <footer className="py-16 text-white bg-neutral-800 font-font_avenir">
-      <div className="grid grid-cols-1 mx-auto max_w padding lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-5 mx-auto max_w padding lg:grid-cols-2">
         <div>
           <Link className="block text-secondary-900" href="/">
             <Image
@@ -45,9 +45,9 @@ const SiteFooter = async () => {
             </ul>
           </div>
         </div>
-        <div className="justify-between lg:flex lg:mt-6 ">
+        <div className="justify-between space-y-5 lg:space-y-0 lg:flex lg:mt-6">
           <div>
-            <ul className="space-y-4">
+            <ul className="space-y-3 lg:space-y-4">
               <li className="h3 font-font_poppins">Quick Links</li>
               <li>
                 <Link href="/">Home</Link>
