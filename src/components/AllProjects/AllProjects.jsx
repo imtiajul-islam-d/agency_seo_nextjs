@@ -14,7 +14,7 @@ const AllProjects = async () => {
   const data = await getData();
   return (
     <section>
-      <PageHeader data={{ title: "All Project", breadcrumb: "projects" }} />
+      <PageHeader title="All Projects" breadcrumb="projects" />
       <Projects />
       <NewsLetter />
     </section>

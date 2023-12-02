@@ -13,9 +13,7 @@ const TestimonialList = async () => {
   const data = await getData();
   return (
     <section>
-      <PageHeader
-        data={{ title: "Testimonial List", breadcrumb: "testimonials" }}
-      />
+      <PageHeader title="Testimonial List" breadcrumb="testimonials" />
       <Testimonials />
       <NewsLetter />
     </section>

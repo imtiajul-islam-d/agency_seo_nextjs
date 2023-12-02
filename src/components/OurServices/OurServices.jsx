@@ -13,7 +13,7 @@ const OurServices = async () => {
   const data = await getData();
   return (
     <section>
-      <PageHeader data={{ title: "Our Services", breadcrumb: "services" }} />
+      <PageHeader title="Our Services" breadcrumb="services" />
       <Services />
       <NewsLetter />
     </section>

@@ -13,7 +13,7 @@ const TeamComp = async () => {
   const data = await getData();
   return (
     <section>
-      <PageHeader data={{ title: "Team", breadcrumb: "team" }} />
+      <PageHeader title="Team" breadcrumb="team" />
       <TeamMembers />
       <NewsLetter />
     </section>
