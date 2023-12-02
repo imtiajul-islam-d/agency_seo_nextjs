@@ -58,26 +58,72 @@
   align-items: center;
 }
 
-/* Define a custom animation called animate-bounce-custom */
-.animate-bounce-custom {
-  animation: bounce 2s ease-in-out;
+/* preloader */
+/* home */
+.loader {
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  overflow: hidden;
 }
-@keyframes bounce {
-  0%,
-  20%,
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgb(255, 136, 0);
+  transform: translate(-50%, 100%) scale(0);
+  animation: push 2s infinite ease-in;
+}
+.loader:after {
+  animation-delay: 1s;
+}
+@keyframes push {
+  0% {
+    transform: translate(-50%, 100%) scale(1);
+  }
+  15%,
+  25% {
+    transform: translate(-50%, 50%) scale(1);
+  }
   50%,
+  75% {
+    transform: translate(-50%, -30%) scale(0.5);
+  }
   80%,
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, -50%) scale(0);
   }
-  40% {
-    transform: translateY(-20px);
-  }
-  60% {
-    transform: translateY(-10px);
+}
+/* home */
+/* team */
+.loader_team {
+  width: 100%;
+  /* height: 200px; */
+  background: linear-gradient(0.25turn, transparent, #fff, transparent),
+    linear-gradient(#ddd, #ddd),
+    radial-gradient(38px circle at 19px 19px, #ddd 50%, transparent 51%),
+    linear-gradient(#ddd, #ddd);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 315px 200px, 315px 130px, 100px 100px, 225px 30px;
+  background-position: -315px 0, 0 0, 15px 140px, 65px 145px;
+  animation: loading_team 1.5s infinite;
+}
+
+@keyframes loading_team {
+  to {
+    background-position: 315px 0, 0 0, 15px 140px, 65px 145px;
   }
 }
 
+/* team */
+
+/* Define a custom animation called animate-bounce-custom */
 /*  */
 .slideInLeft {
   -webkit-animation-name: slideInLeft;
@@ -140,49 +186,4 @@
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
-}
-
-/* // */
-
-.slideInDown {
-  -webkit-animation-name: slideInDown;
-  animation-name: slideInDown;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-@-webkit-keyframes slideInDown {
-  0% {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-    visibility: visible;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-@keyframes slideInDown {
-  0% {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-    visibility: visible;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-/*  */
-.c_grid {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.c_grid-item {
-  flex: 1 1 calc(50% - 5px); /* Adjust based on your grid column count and gap */
-  margin-bottom: 5px; /* Adjust margin or gap between items */
-  display: flex;
 }

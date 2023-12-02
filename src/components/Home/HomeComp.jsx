@@ -7,7 +7,9 @@ const HomeComp = () => {
   return (
     <div>
       <Hero />
-      <WorkList />
+      <section>
+        <WorkList />
+      </section>
       <FeaturedProject />
       <NewsLetter />
     </div>
