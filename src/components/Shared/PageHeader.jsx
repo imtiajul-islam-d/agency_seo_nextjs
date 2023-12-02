@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const PageHeader = ({ title = "title", breadcrumb = "/" }) => {
   return (
-    <div className="bg-[#f8f9fc] pt-36 pb-16 md:pt-44 font-font_poppins">
+    <div className="bg-[#f8f9fc] pb-16 pt-44 font-font_poppins">
       <div className="mx-auto max_w padding">
         <h3 className="text-[2.5rem] leading-[3.188rem] font-font_poppins mb-3 font-semibold">
           {title}

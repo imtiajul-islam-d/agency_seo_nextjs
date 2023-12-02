@@ -3,7 +3,7 @@ import React from "react";
 
 const ServiceItem = ({ item }) => {
   return (
-    <div className="px-4 py-5 overflow-hidden transition shadow-md cursor-pointer hover:shadow-xl rounded-2xl">
+    <div className="px-4 py-5 overflow-hidden transition border shadow-md cursor-pointer border-neutral-200 hover:shadow-xl rounded-2xl">
       <div className="space-y-2">
         <h3 className="leading-[2.438rem] text-[1.625rem] font-font_poppins font-semibold">
           {item?.title}
@@ -13,7 +13,7 @@ const ServiceItem = ({ item }) => {
         </p>
       </div>
       <div className="grid grid-cols-4 gap-3 mt-7 md:gap-5">
-        <div className="col-span-3 h-[10.25rem] overflow-hidden  rounded-xl">
+        <div className="col-span-3 h-[10.25rem] overflow-hidden rounded-xl">
           <Image
             width={1000}
             height={750}
@@ -24,7 +24,7 @@ const ServiceItem = ({ item }) => {
             alt=""
           />
         </div>
-        <div className="h-[10.25rem] overflow-hidden  rounded-xl">
+        <div className="h-[10.25rem] overflow-hidden rounded-xl">
           <Image
             width={1000}
             height={750}

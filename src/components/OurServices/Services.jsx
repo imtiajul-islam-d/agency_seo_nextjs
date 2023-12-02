@@ -10,7 +10,7 @@ async function getData() {
 const Services = async () => {
   const data = await getData();
   return (
-    <section className="my-20">
+    <section className="mt-20">
       <div className="mx-auto max_w padding">
         <div className="my-10">
           <ComponentTitle
