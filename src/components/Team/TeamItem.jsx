@@ -11,7 +11,6 @@ const TeamItem = ({ item }) => {
         <Image
           width={1000}
           height={750}
-          priority
           className="object-cover min-w-full min-h-full"
           src={item?.image}
           placeholder="blur"

@@ -12,7 +12,7 @@ const NewsLetter = () => {
           <p className="max-w-[30.938rem] text-[1rem] leading-[1.366rem] text-center font-font_avenir font-medium">
             Please drop your email below to get daily update about what we do
           </p>
-          <div className="mt-6">
+          <div className="mt-6 ">
             <form
               onSubmit={(e) => e.preventDefault()}
               className="flex items-center justify-center p-1 bg-white border rounded-xl sm:mx-auto font-font_avenir"
@@ -22,7 +22,7 @@ const NewsLetter = () => {
                 placeholder="Enter your email"
                 className="w-full p-2 text-gray-500 outline-none"
               />
-              <button className="p-2 px-3 font-medium text-white duration-150 bg-orange-600 shadow-md outline-none rounded-xl hover:bg-neutral-50 active:bg-orange-700 focus:shadow-none sm:px-4 hover:text-orange-600 font-font_poppins">
+              <button className="px-3 py-4 font-medium text-white duration-150 bg-orange-600 shadow-md outline-none rounded-xl hover:bg-neutral-50 active:bg-orange-700 focus:shadow-none sm:px-4 hover:text-orange-600 font-font_poppins">
                 Subscribe
               </button>
             </form>
