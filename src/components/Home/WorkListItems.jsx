@@ -14,7 +14,7 @@ const WorkListItems = async () => {
       <div className="grid grid-cols-1 gap-2 mt-8 md:gap-5 md:grid-cols-2 lg:grid-cols-3">
         {data?.map((item) => (
           <div
-            className="py-[3.125rem] group rounded-lg hover:bg-primary-50 transition hover:shadow-sm  px-[1.875rem]"
+            className="py-[3.125rem] group rounded-lg border border-neutral-200 hover:bg-primary-50 transition hover:shadow-sm  px-[1.875rem]"
             key={item?.id}
           >
             <div className="max-w-[18.688rem]">
