@@ -14,6 +14,7 @@ module.exports = {
       },
       screens: {
         mobile: { max: "39.9375em" },
+        min_lg: { max: "61em" },
         // => @media (max-width: 639px) { ... }
         phablet: "39.9375em",
         // => @media (min-width: 640px) { ... }

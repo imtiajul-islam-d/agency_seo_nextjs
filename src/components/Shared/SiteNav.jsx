@@ -4,7 +4,9 @@ import Link from "next/link";
 import Button from "./Button";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 const SiteNav = () => {
+  const [dropdown, setDropdown] = useState(false);
   const current = usePathname();
 
   const nav = [
@@ -54,11 +56,19 @@ const SiteNav = () => {
           </div>
 
           <div className="md:flex md:items-center md:gap-4">
-            <nav aria-label="Global" className="hidden lg:block">
-              <ul className="flex items-center text-sm gap-7 sm:pl-4">
+            <nav
+              aria-label="Global"
+              className={`transition-all ${
+                dropdown
+                  ? "padding py-10 flex items-center justify-center flex-col  top-20 lg:top-0 backdrop-blur-3xl  left-0 absolute z-50 lg:relative bg-[rgba(255,255,255,0.77)] lg:bg-transparent w-full"
+                  : "-top-96 lg:top-0 w-full lg:relative left-0 absolute"
+              }`}
+            >
+              <ul className="space-y-5 text-sm text-center lg:items-center lg:flex gap-7 sm:pl-4 lg:space-y-0">
                 {nav?.map((item) => (
                   <li key={item?.id}>
                     <Link
+                      onClick={() => setDropdown((e) => !e)}
                       className={`text-sm lg:text-base font-medium transition   ${
                         current === item?.link
                           ? "text-primary-500 hover:text-neutral-500"
@@ -70,6 +80,26 @@ const SiteNav = () => {
                     </Link>
                   </li>
                 ))}
+                <li className="sm:hidden ">
+                  <div className="my-5 space-y-4 sm:flex sm:gap-4">
+                    <Button
+                      textColor="text-primary-500"
+                      title="Login"
+                      color="bg-neutral-50"
+                      h_textColor="hover:text-neutral-50"
+                      h_color="hover:bg-primary-500"
+                    />
+                    <div className="sm:flex">
+                      <Button
+                        textColor="text-neutral-50"
+                        title="Register"
+                        color="bg-primary-500"
+                        h_textColor="hover:text-primary-500"
+                        h_color="hover:bg-neutral-50"
+                      />
+                    </div>
+                  </div>
+                </li>
               </ul>
             </nav>
 
@@ -94,7 +124,10 @@ const SiteNav = () => {
               </div>
 
               <div className="block lg:hidden">
-                <button className="p-2 text-gray-600 transition bg-gray-100 rounded hover:text-gray-600/75">
+                <button
+                  onClick={() => setDropdown((e) => !e)}
+                  className="p-2 text-gray-600 transition bg-gray-100 rounded hover:text-gray-600/75"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-5 h-5"
