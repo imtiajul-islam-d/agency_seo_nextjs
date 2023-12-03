@@ -3,13 +3,25 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        // protocol: 'https',
         hostname: "agency.teamrabbil.com",
-        // port: '',
-        // pathname: '/account123/**',
       },
     ],
   },
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          {
+            // prevent to load on iframe from other origin
+            key: "X-Frame-Options",
+            value: "SAMEORIGIN",
+          },
+        ],
+      },
+    ];
+  },
+  poweredByHeader: false,
 };
 
 module.exports = nextConfig;
