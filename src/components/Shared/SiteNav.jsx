@@ -60,7 +60,7 @@ const SiteNav = () => {
               aria-label="Global"
               className={`transition-all ${
                 dropdown
-                  ? "padding py-10 flex items-center justify-center flex-col  top-20 lg:top-0 backdrop-blur-3xl  left-0 absolute z-50 lg:relative bg-[rgba(255,255,255,0.77)] lg:bg-transparent w-full"
+                  ? "padding lg:p-0 py-10 flex items-center justify-center flex-col  top-20 lg:top-0 backdrop-blur-3xl  left-0 absolute z-50 lg:relative bg-[rgba(255,255,255,0.77)] lg:bg-transparent w-full"
                   : "-top-96 lg:top-0 w-full lg:relative left-0 absolute"
               }`}
             >
